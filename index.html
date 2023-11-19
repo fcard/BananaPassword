@@ -1,0 +1,164 @@
+<!DOCTYPE html><html lang="en"><head>
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+
+    <link rel="stylesheet" href="/BananaPassword/index-d1db63f086077d6e.css">
+
+    <script>
+      addEventListener("DOMContentLoaded", (event) => {
+        let w = window.screen.width;
+        let h = window.screen.height;
+        let ratio = Math.min((100 * w) / 1920, (100 * h) / 1080);
+        let scale = Math.floor(ratio) + '%';
+
+        document.body.style.transform =
+          "scale(" + scale + ");"
+      });
+
+      addEventListener("load", (event) => {
+        function reset_animation(element) {
+          element.style.animation = 'none';
+          element.offsetHeight;
+          element.style.animation = null;
+        }
+
+        function try_set_reset() {
+          let wsel = document.getElementById("weapon-select");
+          if (wsel !== null) {
+            let wpn1 = document.getElementById("weapon1");
+            let wpn2 = document.getElementById("weapon2");
+            wsel.addEventListener("change", (event) => {
+              reset_animation(wpn1);
+              reset_animation(wpn2);
+            });
+          } else {
+            setTimeout(try_set_reset, 100);
+          }
+        }
+        try_set_reset();
+      });
+    </script>
+  
+<link rel="preload" href="/BananaPassword/banana_pass-b79ccef8b651687f_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/BananaPassword/banana_pass-b79ccef8b651687f.js"></head>
+<body>
+<script type="module">import init from '/BananaPassword/banana_pass-b79ccef8b651687f.js';init('/BananaPassword/banana_pass-b79ccef8b651687f_bg.wasm');</script></body></html>

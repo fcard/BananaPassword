@@ -11,6 +11,7 @@ git_ext_exists() {
   x=$(git status "*.$1")
   case "$x" in
     *"Untracked files"*) return 0; ;;
+    *"Changes not staged"*) return 0 ;;
     *) return 1; ;;
   esac
 }
